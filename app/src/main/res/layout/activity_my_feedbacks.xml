@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/displayDate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFeedbacks">
+
+    <include
+        android:id="@+id/toolbarMyBookings"
+        layout="@layout/toolbar_my_feedbacks"
+        android:layout_width="426dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/FeedbackTitle"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="168dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#D63B3B"
+        android:text="@string/btnCancel"
+        app:cornerRadius="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#3f51b5"
+        android:text="@string/btnUpdate"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="7sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbaMyrFeedback"
+        layout="@layout/toolbar_feedback"
+        android:layout_width="426dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="384dp"
+        android:backgroundTint="#3f51b5"
+        android:text="@string/submit_feedback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="608dp"
+        android:text="@string/tell_us_how_we_can_improve_feedback"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="323dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/write_feedback"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="261dp"-->
+<!--        android:layout_height="61dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_marginEnd="92dp"-->
+<!--        android:contentDescription="@string/todo_feedback"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/img"-->
+<!--        tools:ignore="ImageContrastCheck" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
