@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "238196825451",
-    "firebase_url": "https://rooms-3eb00-default-rtdb.firebaseio.com",
-    "project_id": "rooms-3eb00",
-    "storage_bucket": "rooms-3eb00.appspot.com"
+    "project_number": "948272293610",
+    "project_id": "events-4ab5a",
+    "storage_bucket": "events-4ab5a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:238196825451:android:373f4d2d6dd9ee07fc402e",
+        "mobilesdk_app_id": "1:948272293610:android:f5c95584bf0903b3105993",
         "android_client_info": {
-          "package_name": "com.example.rooms"
+          "package_name": "com.example.events"
         }
       },
       "oauth_client": [
         {
-          "client_id": "238196825451-drj68in8878cv7k909ff5f8dr4al9r3e.apps.googleusercontent.com",
+          "client_id": "948272293610-4711qth1rfb15338f5nalfbv6pqpepdv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzmZ1o7M7ObTLD2uBOpAADiYnkFlkC-xQ"
+          "current_key": "AIzaSyCvByxoOwr33-Wn90AYqHcMpMDnsOeTOGc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "238196825451-drj68in8878cv7k909ff5f8dr4al9r3e.apps.googleusercontent.com",
+              "client_id": "948272293610-4711qth1rfb15338f5nalfbv6pqpepdv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

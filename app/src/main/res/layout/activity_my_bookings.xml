@@ -2,13 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/displayDate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyBookings">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:text="@string/displayDate"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/titleEventDate"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <include
         android:id="@+id/toolbarMyBookings"
-        layout="@layout/toolbar_summary"
+        layout="@layout/toolbar_my_bookings"
         android:layout_width="426dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,7 +27,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/titleCheckIn"
+        android:id="@+id/titleEventDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -29,37 +40,12 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
 
     <TextView
-        android:id="@+id/titleGuest_No"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="144dp"
-        android:text="@string/titleGuest_no"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
-
-    <TextView
-        android:id="@+id/titleCheckOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="96dp"
-        android:text="@string/titleCheckOut"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
-
-    <TextView
         android:id="@+id/titleGuestNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="120dp"
+        android:text="@string/titleGuestNo"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -70,7 +56,7 @@
         android:id="@+id/btnCancel"
         android:layout_width="168dp"
         android:layout_height="54dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#D63B3B"
         android:text="@string/btnCancel"
@@ -83,13 +69,23 @@
         android:layout_width="166dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="192dp"
         android:backgroundTint="#3f51b5"
         android:text="@string/btnUpdate"
         android:textColor="#FFFFFF"
         app:cornerRadius="7sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarMyBookings" />
+
+    <TextView
+        android:id="@+id/displayGuestNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:text="@string/displayGuestNo"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/titleGuestNo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
