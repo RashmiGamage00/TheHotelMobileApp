@@ -7,35 +7,35 @@
     tools:context=".SuccessPage">
 
     <include
-        android:id="@+id/toolbarSummary"
-        layout="@layout/toolbar_feedback"
-        android:layout_width="426dp"
-        android:layout_height="59dp"
+        android:id="@+id/toolbarEvents"
+        layout="@layout/toolbar_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/successMsg"
-        android:layout_width="300dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="262dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="108dp"
         android:text="@string/successMsg"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarSummary" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEvents" />
 
     <Button
-        android:id="@+id/btnFeedbacks"
+        android:id="@+id/btnMyBookings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#3f51b5"
-        android:text="@string/btnFeedbacks"
+        android:text="@string/btnMyBookings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/successMsg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

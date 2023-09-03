@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.ratings'
+    namespace 'com.example.rooms'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.ratings"
+        applicationId "com.example.rooms"
         minSdk 21
         targetSdk 32
         versionCode 1

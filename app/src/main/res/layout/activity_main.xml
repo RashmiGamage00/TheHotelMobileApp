@@ -7,61 +7,137 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/toolbaMyrFeedback"
-        layout="@layout/toolbar_feedback"
-        android:layout_width="426dp"
-        android:layout_height="59dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="296dp"
-        android:layout_marginBottom="384dp"
-        android:backgroundTint="#3f51b5"
-        android:text="@string/submit_feedback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="70dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="608dp"
-        android:text="@string/tell_us_how_we_can_improve_feedback"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <include
+            android:id="@+id/toolbarEvents"
+            layout="@layout/toolbar_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
 
-    <EditText
-        android:id="@+id/feedback"
-        android:layout_width="323dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="@string/write_feedback"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:animateLayoutChanges="false"
+            android:background="#FDFDFD"
+            android:backgroundTint="#FFFFFF"
+            android:fadeScrollbars="false"
+            android:translationY="15dp"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="10dp">
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="261dp"-->
-<!--        android:layout_height="61dp"-->
-<!--        android:layout_marginTop="200dp"-->
-<!--        android:layout_marginEnd="92dp"-->
-<!--        android:contentDescription="@string/todo_feedback"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/img"-->
-<!--        tools:ignore="ImageContrastCheck" />-->
+            <Button
+                android:id="@+id/btnDeluxeBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3f51b5"
+                android:text="@string/btnDeluxeBook"
+                android:translationX="130dp"
+                android:translationY="490dp"
+                tools:ignore="TextContrastCheck" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/hightea_img"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="216dp"-->
+            <!--                android:contentDescription="@string/highTea_img"-->
+            <!--                android:scaleType="fitXY"-->
+            <!--                android:translationY="45dp"-->
+            <!--                app:srcCompat="@drawable/hightea_img" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/highteaDes"-->
+            <!--                android:layout_width="368dp"-->
+            <!--                android:layout_height="108dp"-->
+            <!--                android:fontFamily="sans-serif-medium"-->
+            <!--                android:text="@string/highteaDes"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:translationX="15dp"-->
+            <!--                android:translationY="280dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/highTeaTime"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="sans-serif-medium"-->
+            <!--                android:text="@string/highteaHours"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:translationX="55dp"-->
+            <!--                android:translationY="390dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/highTeaTitle"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="79dp"-->
+            <!--                android:fontFamily="cursive"-->
+            <!--                android:text="@string/highteaTitle"-->
+            <!--                android:textSize="30sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:translationX="150dp"-->
+            <!--                tools:layout_editor_absoluteX="16dp"-->
+            <!--                tools:layout_editor_absoluteY="71dp" />-->
+
+            <TextView
+                android:id="@+id/roomPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/roomPrice"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="100dp"
+                android:translationY="440dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="252dp"
+                android:contentDescription="@string/deluxeroomImg"
+                app:srcCompat="@drawable/whatsapp_image_2022_10_29_at_07_38_38" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bed_king_sized_or_twin"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:translationX="30dp"
+                android:translationY="280dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/technology_flat_screen_tv_with_cable_satellite_and_wifi"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                android:translationX="30dp"
+                android:translationY="320dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bathroom_bathroom"
+                android:textColor="#040404"
+                android:textSize="20sp"
+                android:translationX="30dp"
+                android:translationY="380dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
