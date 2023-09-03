@@ -1,6 +1,6 @@
-##The Hotel Mobile App##
+The Hotel Mobile App
 
-#MAD Mini Project#
+MAD Mini Project
 
 
 
